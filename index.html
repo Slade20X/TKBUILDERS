@@ -1,0 +1,1563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TKBuilders - Professional general construction services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+        <!-- ================= SEO TAGS ================= -->
+    <title>Professional Carpentry Services | Custom Woodwork</title>
+    <meta name="description" content="Expert carpenter services for custom furniture and home renovations. Serving [London/Region].">
+    <meta name="keywords" content="carpenter services, custom furniture, woodworking, home renovation, wood repair, [London] carpenter">
+    
+    <!-- Open Graph (social media) -->
+    <meta property="og:title" content="Professional general construction services">
+    <meta property="og:description" content="Expert carpenter services for custom furniture and home renovations. Serving [London].">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://yourdomain.com/images/featured-project.jpg">
+<style>
+
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-bottom: 1px solid rgba(245, 158, 11, 0.1);
+    transition: all 0.3s ease;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.site-logo {
+    height: 40px; /* dostosuj do nagłówka */
+    width: auto;
+    display: block;
+}
+
+.logo-text h1 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.logo-text p {
+    font-size: 0.75rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+.nav-desktop {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.nav-desktop a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-desktop a:hover {
+    color: #0f4f32;
+}
+
+.cta-button {
+    background: #0f4f32 !important;
+    color: white !important;
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0f4f32 !important;
+    transform: translateY(-2px);
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #374151;
+    cursor: pointer;
+}
+
+.nav-mobile {
+    display: none;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid #e5e7eb;
+}
+
+.nav-mobile a {
+    text-decoration: none;
+    color: #374151;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    transition: color 0.3s ease;
+}
+
+.nav-mobile a:hover {
+    color: #0f4f32;
+}
+
+.nav-mobile .cta-button {
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 120px 0 80px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: -1;
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.hero-text h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+    color: #1f2937;
+    line-height: 1.1;
+    margin-bottom: 1.5rem;
+}
+
+.highlight {
+    color: #0f4f32;
+}
+
+.hero-text p {
+    font-size: 1.25rem;
+    color: #374151;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    flex-wrap: wrap;
+}
+
+.btn-primary {
+    background: #0f4f32;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.3);
+}
+
+.btn-primary:hover {
+    background: #0c6903;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(11, 245, 50, 0.4);
+}
+
+.btn-secondary {
+    border: 2px solid #0f4f32;
+    color: #0f4f32;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background: #0f4f32;
+    color: white;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+}
+
+.feature-icon {
+    width: 48px;
+    height: 48px;
+    background: rgba(11, 245, 62, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0f4f32;
+    font-size: 1.2rem;
+}
+
+.feature-item span {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #374151;
+}
+
+.hero-image {
+    position: relative;
+}
+
+.image-container {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    transform: rotate(3deg);
+    transition: transform 0.5s ease;
+}
+
+.image-container:hover {
+    transform: rotate(0deg);
+}
+
+.image-container img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.rating-card {
+    position: absolute;
+    bottom: -24px;
+    left: -24px;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.stars {
+    display: flex;
+    color: #ff9900;
+    font-size: 1.2rem;
+}
+
+.rating-score {
+    font-weight: 700;
+    color: #1f2937;
+    margin: 0;
+}
+
+.rating-desc {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin: 0;
+}
+
+/* Services Section */
+.services {
+    padding: 80px 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-header h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 1rem;
+}
+
+.section-header p {
+    font-size: 1.25rem;
+    color: #6b7280;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.service-card {
+    background: linear-gradient(135deg, #f9fafb, #f3f4f6);
+    padding: 2rem;
+    border-radius: 16px;
+    transition: all 0.3s ease;
+    border: 1px solid #e5e7eb;
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+    color: #0f4f32;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    transform: scale(1.1);
+}
+
+.service-card h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.service-card p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.service-link {
+    color: #0f4f32;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.service-link:hover {
+    color: #d97706;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.95);
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.portfolio-item {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.portfolio-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-item:hover .portfolio-image img {
+    transform: scale(1.1);
+}
+
+.portfolio-content {
+    padding: 1.5rem;
+}
+
+.portfolio-content h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.75rem;
+}
+
+.portfolio-content p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.portfolio-cta {
+    text-align: center;
+}
+
+/* About Section */
+.about {
+    padding: 80px 0;
+    background: white;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-text h2 {
+    font-size: clamp(2rem, 4vw, 2.5rem);
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1rem;
+}
+
+.about-intro {
+    font-size: 1.25rem;
+    color: #6b7280;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.about-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.about-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.about-feature-icon {
+    width: 32px;
+    height: 32px;
+    background: rgba(34, 197, 94, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #22c55e;
+    flex-shrink: 0;
+}
+
+.about-feature-content h3 {
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.about-feature-content p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.about-image {
+    position: relative;
+}
+
+.about-image .image-container {
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.about-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+}
+
+.stats-card {
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    background: #0f4f32;
+    color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(245, 158, 11, 0.3);
+}
+
+.stats-number {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.stats-text {
+    font-size: 0.875rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 0;
+    background: white;
+    color: white;
+}
+
+.contact .section-header h2 {
+    color: rgb(0, 0, 0);
+}
+
+.contact .section-header p {
+    color: #000000;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.contact-form h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 1.5rem;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    color: #374151;
+    margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #0f4f32;
+    box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+}
+
+.full-width {
+    width: 100%;
+}
+
+.contact-info {
+    display: flex;
+
+    gap: 15.5rem;
+}
+
+.contact-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contact-card h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    color:#000000
+}
+
+.contact-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-icon {
+    width: 48px;
+    height: 48px;
+    background: #0f4f32;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.contact-label {
+    font-weight: 500;
+    margin: 0;
+    color:#000000;
+}
+
+.contact-value {
+    color: #000000;
+    margin: 0;
+}
+.contact2 {
+    color: #000000;
+    margin: 0;
+}
+
+.hours-list p {
+    margin-bottom: 0.5rem;
+    color:#000000;
+}
+
+.day {
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+/* Footer */
+.footer {
+    background: #ffffff;
+
+    padding: 2rem 0;
+}
+
+.footer-content {
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.footer-logo .logo-icon {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+}
+
+.footer-logo span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: rgb(0, 0, 0);
+}
+
+.footer-desc {
+    color: #9ca3af;
+    margin-bottom: 1rem;
+}
+
+.footer-copy {
+    color: #6b7280;
+    font-size: 0.875rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .mobile-menu-btn {
+        display: block;
+    }
+    
+    .nav-desktop {
+        display: none;
+    }
+    
+    .nav-mobile.active {
+        display: flex;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+    }
+    
+    .hero-image {
+        order: -1;
+    }
+    
+    .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .about-image {
+        order: -1;
+    }
+    
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-primary,
+    .btn-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .hero {
+        padding: 100px 0 60px;
+    }
+    
+    .services,
+    .portfolio,
+    .about,
+    .contact {
+        padding: 60px 0;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .rating-card {
+        position: static;
+        margin-top: 1rem;
+        align-self: center;
+    }
+    
+    .stats-card {
+        position: static;
+        margin-top: 1rem;
+        align-self: center;
+    }
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Loading animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* Form validation styles */
+.form-group input:invalid,
+.form-group select:invalid,
+.form-group textarea:invalid {
+    border-color: #ef4444;
+}
+
+.form-group input:valid,
+.form-group select:valid,
+.form-group textarea:valid {
+    border-color: #22c55e;
+}
+
+/* Success message */
+.success-message {
+    background: #dcfce7;
+    color: #166534;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #bbf7d0;
+}
+
+.error-message {
+    background: #fef2f2;
+    color: #dc2626;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid #fecaca;
+}
+</style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <div class="logo-icon">
+                    <img src="logo.png" alt="Logo" class="site-logo">
+                    </div>
+                    <div class="logo-text">
+                        <h1>FloorMaster</h1>
+                        <p>Usługi podłogowe</p>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <nav class="nav-desktop">
+                    <a href="#hero">Main Page</a>
+                    <a href="#uslugi">Services</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#portfolio">Gallery</a>
+                    <a href="#o-nas">Abous Us</a>
+                    <a href="#kontakt">Contact</a>
+                    <a href="#kontakt" class="cta-button">Free Quote</a>
+                </nav>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars" id="menuIcon"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <nav class="nav-mobile" id="mobileNav">
+                <a href="#uslugi">Services</a>
+                <a href="#portfolio">Portfolio</a>
+                <a href="#portfolio">Gallery</a>
+                <a href="#o-nas">Abous Us</a>
+                <a href="#kontakt">Contact</a>
+                <a href="#kontakt" class="cta-button">Free Quote</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Professional <span class="highlight">Services</span></h1>
+                    <p>Professional services that will meet your expectations.</p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#kontakt" class="btn-primary">
+                            Free Quote
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#portfolio" class="btn-secondary">Our Projects</a>
+                    </div>
+
+                    <div class="features-grid">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <span>Timely completion</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <span>Warranty on completed work</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <span>Experienced team</span>
+                        </div>
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <span>Highest quality materials</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="profile.jpeg" alt="Profesjonalny montaż podłóg">
+                    </div>
+                    <div class="rating-card">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="rating-text">
+                            <p class="rating-score">4.9</p>
+                            <p class="rating-desc">50+ satisfied customers</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="uslugi" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Services</h2>
+                
+            </div>
+
+            
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                   
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-brush"></i>
+                    </div>
+                    <h3>Painting & Decorating</h3>
+                   
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Kitchens & Barhrooms</h3>
+                  
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Refurbishment & Renovations</h3>
+                
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-windows"></i>
+                    </div>
+                    <h3>Sash Window Renovation</h3>
+                  
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                                             <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Tiling & Flooring</h3>
+                  
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+
+            </div>
+
+                                            <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hammer"></i>
+                    </div>
+                    <h3>Decking & Fencing</h3>
+                  
+                    <a href="#portfolio" class="service-link">
+                        More...
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Projects</h2>
+               
+            </div>
+
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="12.jpg" alt="Salon z parkietem dębowym">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Salon z parkietem dębowym</h3>
+                        <p>Elegancki parkiet dębowy w nowoczesnym salonie</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="2.jpeg" alt="Panele laminowane w sypialni">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Panele laminowane w sypialni</h3>
+                        <p>Ciepłe panele laminowane imitujące drewno</p>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <div class="portfolio-image">
+                        <img src="3.jpeg" alt="Nowoczesne panele winylowe">
+                    </div>
+                    <div class="portfolio-content">
+                        <h3>Nowoczesne panele winylowe</h3>
+                        <p>Wodoodporne panele SPC w kuchni</p>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-cta">
+                <a href="galeria.html" class="btn-primary">Gallery</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="o-nas" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Why choose us?</h2>
+                    <p class="about-intro">Our team consists of skilled specialists with extensive experience in the flooring industry.</p>
+
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-content">
+                                <h3>5 lat doświadczenia</h3>
+                                <p>Wykonaliśmy dużą ilość projektów dla zadowolonych klientów w całym regionie.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-content">
+                                <h3>Gwarancja i ubezpieczenie</h3>
+                                <p>Wszystkie nasze prace objęte są gwarancją jakości i ubezpieczeniem OC.</p>
+                            </div>
+                        </div>
+
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="about-feature-content">
+                                <h3>Materiały najwyższej jakości</h3>
+                                <p>Materiały pobieramy od najlepszych producentów, gwarantując trwałość podłóg.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="55.jpeg" alt="Nasz zespół przy pracy">
+                    </div>
+                    <div class="stats-card">
+                        <p class="stats-number">50+</p>
+                        <p class="stats-text">zadowolonych klientów</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact with Us</h2>
+    
+            </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <h3>Contact Details</h3>
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">Pon-Sob: 8:00 - 18:00<p class="contact2">737 518 748</p></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">24/7<p class="contact2">kontakt@floormaster.pl</p></p>
+                                </div>
+                            </div>
+                            
+                            <div class="contact-item">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <p class="contact-label">Adres</p>
+                                    <p class="contact-value">76-200 Słupsk</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">
+                        <img src="logo.png" alt="Logo" class="site-logo">
+                    </div>
+                    <span>TKBuilders</span>
+                </div>
+                <p class="footer-copy">© 2026 TKBuilders™. Wszystkie prawa zastrzeżone.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const mobileNav = document.getElementById('mobileNav');
+    const menuIcon = document.getElementById('menuIcon');
+    
+    let isMenuOpen = false;
+    
+    mobileMenuBtn.addEventListener('click', function() {
+        isMenuOpen = !isMenuOpen;
+        
+        if (isMenuOpen) {
+            mobileNav.classList.add('active');
+            mobileNav.style.display = 'flex';
+            menuIcon.className = 'fas fa-times';
+        } else {
+            mobileNav.classList.remove('active');
+            mobileNav.style.display = 'none';
+            menuIcon.className = 'fas fa-bars';
+        }
+    });
+    
+    // Close mobile menu when clicking on links
+    const mobileLinks = mobileNav.querySelectorAll('a');
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            isMenuOpen = false;
+            mobileNav.classList.remove('active');
+            mobileNav.style.display = 'none';
+            menuIcon.className = 'fas fa-bars';
+        });
+    });
+    
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(event) {
+        if (isMenuOpen && !mobileMenuBtn.contains(event.target) && !mobileNav.contains(event.target)) {
+            isMenuOpen = false;
+            mobileNav.classList.remove('active');
+            mobileNav.style.display = 'none';
+            menuIcon.className = 'fas fa-bars';
+        }
+    });
+});
+
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const headerHeight = document.querySelector('.header').offsetHeight;
+            const targetPosition = target.offsetTop - headerHeight - 20;
+            
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
+            });
+        }
+    });
+});
+
+// Header scroll effect
+window.addEventListener('scroll', function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+        header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    } else {
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.boxShadow = 'none';
+    }
+});
+
+// Contact form handling
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    // Get form data
+    const formData = new FormData(this);
+    const data = Object.fromEntries(formData);
+    
+    // Basic validation
+    if (!data.name || !data.phone || !data.email || !data.service || !data.message) {
+        showMessage('Proszę wypełnić wszystkie pola formularza.', 'error');
+        return;
+    }
+    
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(data.email)) {
+        showMessage('Proszę podać prawidłowy adres email.', 'error');
+        return;
+    }
+    
+    // Phone validation (basic)
+    const phoneRegex = /^[\+]?[0-9\s\-\(\)]{9,}$/;
+    if (!phoneRegex.test(data.phone)) {
+        showMessage('Proszę podać prawidłowy numer telefonu.', 'error');
+        return;
+    }
+    
+    // Simulate form submission
+    const submitButton = this.querySelector('button[type="submit"]');
+    const originalText = submitButton.textContent;
+    
+    submitButton.textContent = 'Wysyłanie...';
+    submitButton.disabled = true;
+    
+    // Simulate API call
+    setTimeout(() => {
+        showMessage('Dziękujemy za wiadomość! Skontaktujemy się z Państwem w ciągu 24 godzin.', 'success');
+        this.reset();
+        submitButton.textContent = originalText;
+        submitButton.disabled = false;
+    }, 2000);
+});
+
+// Show message function
+function showMessage(message, type) {
+    // Remove existing messages
+    const existingMessages = document.querySelectorAll('.success-message, .error-message');
+    existingMessages.forEach(msg => msg.remove());
+    
+    // Create new message
+    const messageDiv = document.createElement('div');
+    messageDiv.className = type === 'success' ? 'success-message' : 'error-message';
+    messageDiv.textContent = message;
+    
+    // Insert message before form
+    const form = document.getElementById('contactForm');
+    form.parentNode.insertBefore(messageDiv, form);
+    
+    // Auto remove message after 5 seconds
+    setTimeout(() => {
+        messageDiv.remove();
+    }, 5000);
+    
+    // Scroll to message
+    messageDiv.scrollIntoView({ behavior: 'smooth', block: 'center' });
+}
+
+// Intersection Observer for animations
+const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+};
+
+const observer = new IntersectionObserver(function(entries) {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('fade-in-up');
+        }
+    });
+}, observerOptions);
+
+// Observe elements for animation
+document.addEventListener('DOMContentLoaded', function() {
+    const animatedElements = document.querySelectorAll('.service-card, .portfolio-item, .about-feature');
+    animatedElements.forEach(el => observer.observe(el));
+});
+
+// Portfolio image lazy loading
+document.addEventListener('DOMContentLoaded', function() {
+    const images = document.querySelectorAll('img');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.style.opacity = '0';
+                img.style.transition = 'opacity 0.3s ease';
+                
+                img.onload = function() {
+                    img.style.opacity = '1';
+                };
+                
+                observer.unobserve(img);
+            }
+        });
+    });
+    
+    images.forEach(img => imageObserver.observe(img));
+});
+
+// Add loading states for buttons
+document.querySelectorAll('.btn-primary, .btn-secondary').forEach(button => {
+    button.addEventListener('click', function(e) {
+        // Don't add loading state for form submit buttons or anchor links
+        if (this.type === 'submit' || this.getAttribute('href')) {
+            return;
+        }
+        
+        const originalText = this.textContent;
+        this.textContent = 'Ładowanie...';
+        this.disabled = true;
+        
+        setTimeout(() => {
+            this.textContent = originalText;
+            this.disabled = false;
+        }, 1000);
+    });
+});
+
+// Keyboard navigation improvements
+document.addEventListener('keydown', function(e) {
+    // Close mobile menu with Escape key
+    if (e.key === 'Escape') {
+        const mobileNav = document.getElementById('mobileNav');
+        const menuIcon = document.getElementById('menuIcon');
+        
+        if (mobileNav.classList.contains('active')) {
+            mobileNav.classList.remove('active');
+            mobileNav.style.display = 'none';
+            menuIcon.className = 'fas fa-bars';
+        }
+    }
+});
+
+// Performance optimization: Debounce scroll events
+function debounce(func, wait) {
+    let timeout;
+    return function executedFunction(...args) {
+        const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+        };
+        clearTimeout(timeout);
+        timeout = setTimeout(later, wait);
+    };
+}
+
+// Apply debounce to scroll handler
+const debouncedScrollHandler = debounce(function() {
+    const header = document.querySelector('.header');
+    if (window.scrollY > 100) {
+        header.style.background = 'rgba(255, 255, 255, 0.98)';
+        header.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    } else {
+        header.style.background = 'rgba(255, 255, 255, 0.95)';
+        header.style.boxShadow = 'none';
+    }
+}, 10);
+
+window.addEventListener('scroll', debouncedScrollHandler);
+
+// Add focus styles for better accessibility
+document.addEventListener('DOMContentLoaded', function() {
+    const focusableElements = document.querySelectorAll('a, button, input, select, textarea');
+    
+    focusableElements.forEach(element => {
+        element.addEventListener('focus', function() {
+            this.style.outline = '2px solid #0f4f32';
+            this.style.outlineOffset = '2px';
+        });
+        
+        element.addEventListener('blur', function() {
+            this.style.outline = 'none';
+        });
+    });
+})
+    </script>
+</body>
+</html>
